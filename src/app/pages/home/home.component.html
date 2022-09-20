@@ -1,0 +1,14 @@
+<app-main-nav-bar (createCharacterEvent)="createCharacter($event)"></app-main-nav-bar>
+<div>
+    <div class="form">
+        <input type="text" (keyup)="onKey()" class="searchinput" placeholder="Search by name" style="width: 300px" [(ngModel)]="filtertext">
+    </div>
+    <div class="container" infiniteScroll (scrolled)="onScrollDown()" >
+        <div *ngFor="let character of charactersList">
+            <app-character  [character]="character" (deleteCharacterEvent)="deleteCharacter($event)"></app-character>
+        </div> 
+    </div>
+</div>
+
+
+

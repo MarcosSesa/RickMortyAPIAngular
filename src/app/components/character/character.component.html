@@ -1,0 +1,18 @@
+<mat-card class="CCard">
+  <img class="Cimg" mat-card-image src="{{character.image}}">  
+  <div class="icons">
+    <mat-icon  (click)="edit()" aria-hidden="false" aria-label="Edit icon" fontIcon="edit"></mat-icon>
+    <mat-icon class="icon" (click)="delete()" aria-hidden="false" aria-label="Delete icon" fontIcon="delete"></mat-icon>
+  </div>
+  <mat-card-header>
+      <mat-card-title class="tittle">
+        {{character.name}}
+      </mat-card-title>
+      <mat-card-subtitle class="subtittle">
+        <li>Status: {{character.status}}</li>
+        <li>Especie: {{character.species}}</li>
+        <li>Género: {{character.gender}}</li>
+      </mat-card-subtitle>
+    </mat-card-header>
+    
+  </mat-card>

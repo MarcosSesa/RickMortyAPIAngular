@@ -1,0 +1,26 @@
+
+.tittle{
+font-size: 18px;
+font-weight: 700;
+font-family: 'Courier New', Courier, monospace;
+}
+.subtittle{
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Cimg{
+    border-radius: 50%;
+    height: 50%;
+}
+.icons{
+    text-align: right;
+}
+.icon{
+    cursor: pointer;
+}
+.CCard{
+    min-height: 350px;
+}
+
+
+

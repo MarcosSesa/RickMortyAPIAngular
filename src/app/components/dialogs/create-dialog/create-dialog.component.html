@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 mat-dialog-title>Create new character </h1>
+    <div mat-dialog-content>
+        <form [formGroup]="formGroup">
+            <label for="name">Name</label>
+            <input class="searchinput" name="name" formControlName="name" type="text" />
+            <label for="imageURL">Image</label>
+            <input class="searchinput" name="imageURL" formControlName="imageURL" type="text" />
+            <label for="status">Status</label>
+            <input class="searchinput" name="status" formControlName="status" type="text" />
+            <label for="especie">Especie</label>
+            <input class="searchinput" name="especie" formControlName="especie" type="text" />
+            <label for="gender">Gender</label>
+            <input class="searchinput" name="gender" formControlName="gender" type="text" />
+          </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onClickNo()">NO</button>
+        <button mat-button [mat-dialog-close]=formGroup.value>Si</button>
+    </div>
+</div>
